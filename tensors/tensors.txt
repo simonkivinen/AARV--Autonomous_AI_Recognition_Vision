@@ -1,0 +1,46 @@
+Tensor
+[in deep learning] refers to the generalization
+of the vector and matrices to an arbitary number of
+dimensions, as shown in tensors.png in figure 2.2 .
+Another name for the same consept is multidimensional arrays.
+
+This means the implied tensor difinition in deep learning 
+is only of a multidimensional array.
+
+Tabular data is the most comon thing to stubel 
+upon in deep learning ot standard machin lerning experiments
+types of deep learning
+* Images
+* XGBoost
+* Video
+
+Images
+Images have 3 dimantions channel, height, and width for each pixel.
+there are usually three channels for RGB but can have an unlimited amount of channels
+you could imagine a sensor capturing images on a whole lot 
+diffrent spectrum of light and storing these tensors as a end dimensional
+These images are feed into a newralnetwork as a 4D-Tensor images are usally 3D-Tensor
+but the 4D-tensor usally reprisents the batch size shwon in picture_two.
+Usual suspect in term of neural network architecture for image based data are CNN(convolution) and ViT(vision Transformer)
+those 2 diffrent archetectures are shown side by side in picture_archetectures.
+
+XGBoost
+Most usually tabular data are fed in a neural network as a matrix where
+multiple rows or batch of data are fed at once. XGBoost or allsow called Random Forest machine learnign classifier
+usually out proforms formal newralnetwork especially for medium size data sets
+
+Video
+these are nothing more than a series of images so tensors of size three that are stacked together in a very specific sequence
+of what we call frames. These frames and code change in the pixel across time and their
+ordering is very important for the understaning of the video data.
+There for a video tensor input to a newralnetwork can be seen as having five dimensions three for the image
+or what we call frame one more for a stack of image for a specific video or a subsection of a video and
+finally another dimension for a batch of these video to feed into the neural network as a mini batch
+The neural network type for a video can take many form but it's usually a modified form of vision based network
+that leverage the sequential aspect of the batch of data being feed to it.
+Like in the picture_slowfastNetwork.
+
+list of sources:
+https://www.youtube.com/watch?v=lMG5O6cezKA
+https://proceedings.neurips.cc/paper_files/paper/2022/file/0378c7692da36807bdec87ab043cdadc-Supplemental-Datasets_and_Benchmarks.pdf
+https://www.tensorflow.org/guide/tensor#single-axis_indexing

@@ -1,0 +1,26 @@
+skör de här i terminalen i vscode (orkade inte att länga upp dem i github för då behöver jag langa upp alla filler 
+30 gånger om för 10k+ filer ändras/läggstill)
+
+1. Skapa den isolerade utvecklingsmiljön
+python -m venv .venv
+
+2. Aktivera stöd för långa filnamn i Windows
+powershell (admin access requierd)
+New-ItemProperty -Path "HKLM:\System\CurrentControlSet\Control\FileSystem" -Name "LongPathsEnabled" -Value 1 -PropertyType DWORD -Force
+
+3. Installera grundläggande bibliotek för Tensorer och Jupyter
+.venv\Scripts\pip install torch numpy ipykernel
+
+extentions requierd
+1: Python
+    pylance
+    python
+    python debugger
+    python Enviornments
+
+2: Jupyter för machin lerning
+    Jupyter
+    Jupyter Cell tags
+    Jupyter Keymaps
+    Jupyter Notebook Renderers
+    Jupyter Slide show
